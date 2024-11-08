@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder By Tanzeel Qamar</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" required>
+            <label for="social-media-accounts">Social Media Accounts:</label>
+            <input type="text" id="social-media-accounts" name="social-media-accounts" required>
+        </fieldset>
+        <fieldset>
+            <legend>Objective</legend>
+            <textarea id="objective" name="objective" rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <textarea id="education" name="education" rows="4" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <textarea id="experience" name="experience" rows="9" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <textarea id="skills" name="skills" rows="10" required></textarea>
+        </fieldset>
+        <button type="submit">Get Your Resume</button>
+    </form>
+
+    <div id="generate-resume"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
